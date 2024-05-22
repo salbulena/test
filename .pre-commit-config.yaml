@@ -1,0 +1,9 @@
+https://medium.com/@CVxTz/how-i-found-hundreds-of-secret-passwords-and-api-keys-on-github-and-then-got-banned-for-trying-to-f6f11f0e15a6
+# .pre-commit-config.yaml
+repos:
+-   repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+    -   id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: package.lock.json
